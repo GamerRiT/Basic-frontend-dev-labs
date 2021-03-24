@@ -1,9 +1,0 @@
-<html>
- <head>
-    <title>Кашин Алексей Владимирович</title>
- </head>
-    <body>
-    <frameset rows = "100,*, 100">
-    </frameset>
-    </body>
-</html>
