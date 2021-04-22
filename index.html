@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ball {
+            border-radius: 1000px;
+            background-color: white;
+            width:300px;
+            height:300px;
+            margin-left:300px;
+        }
+        #pentagon {
+            position: absolute;
+            width: 54px;
+            box-sizing: content-box;
+            border-width: 50px 18px 0;
+            border-style: solid;
+            border-color: black transparent;
+        }
+        #pentagon:before {
+            content: "";
+            position: absolute;
+            height: 0;
+            width: 0;
+            top: -85px;
+            left: -18px;
+            border-width: 0 45px 35px;
+            border-style: solid;
+            border-color: transparent transparent black;
+        }
+        .lin{
+            width:100px;
+            height:4px;
+            background-color:black;
+            position:absolute;
+        }
+    </style>
+</head>
+<body style="">
+    <div style="background-color:skyblue; width:100%; height:500px;"></div>
+    <div style="background-color:lightgreen; width:100%; height:500px;">
+        <div style="position:absolute; margin-top:100px;" class="ball">
+            <div style="margin-top:80px; margin-left:30px; transform: rotate(300deg)" id="pentagon"></div>
+            <div style="margin-top:200px; margin-left:105px; transform: rotate(180deg)" id="pentagon"></div>
+            <div style="margin-top:80px; margin-left:180px; transform: rotate(60deg)" id="pentagon"></div>
+            <div style="margin-top:92px; margin-left:100px" class="lin"></div>
+            <div style="margin-top:160px; margin-left:50px; transform: rotate(57deg)" class="lin"></div>
+            <div style="margin-top:160px; margin-left:154px; transform: rotate(303deg)" class="lin"></div>
+            <div style="margin-top:248px; margin-left:155px; transform: rotate(10deg)" class="lin"></div>
+            <div style="margin-top:248px; margin-left:45px; transform: rotate(350deg)" class="lin"></div>
+            <div style="margin-top:135px; margin-left:-22px; transform: rotate(300deg)" class="lin"></div>
+            <div style="margin-top:135px; margin-left:222px; transform: rotate(60deg)" class="lin"></div>
+            <div style="margin-top:50px; margin-left:175px; transform: rotate(60deg)" class="lin"></div>
+            <div style="margin-top:50px; margin-left:25px; transform: rotate(300deg)" class="lin"></div>
+            <div style="margin-top:250px; margin-left:100px; transform: rotate(90deg)" class="lin"></div>
+        </div>
+    </div>
+</body>
+</html>
